@@ -1,20 +1,22 @@
 import math
 import sympy
 import numpy as np
-import array
 from fractions import Fraction
 
-Eps = []
-Eps[1] = Fraction(0.577)
+#Eps = [Fraction(0.577), Fraction(1), Fraction(1.732), Fraction(3.732), Fraction(11.43)]
+
+Eps = np.array([Fraction(0.577), Fraction(1), Fraction(1.732), Fraction(3.732), Fraction(11.43)])
+
+"""Eps[1] = Fraction(0.577)
 Eps[2] = Fraction(1)
 Eps[3] = Fraction(1.732)
 Eps[4] = Fraction(3.732)
-Eps[5] = Fraction(11.43)
+Eps[5] = Fraction(11.43)"""
 
-
-#Eps = Fraction(0.577, 1.0, 1.732, 3.732, 11.43)
-
-
+R2 = 288.3
+R1 = 287
+z1 = 1
+z2 = 1
 r2 = 0.7
 k1 = 1.4
 m = 1
@@ -39,7 +41,6 @@ def calc_r():
 def calc_a():
     global a
     a = ((k1-1)/(2*m))*(M1**2)/(1+(1/Eps**2))
-    print('res =', a)
     return
 
 
@@ -55,11 +56,9 @@ def calc_m1():
     global m1
     piks = 1.001
     while 1.001 <= piks <= 1.121:
-        m1 = math.sqrt(2*(((piks**(1/(k1-1)/k1))-1)/(k1-1)))
+        m1 = np.sqrt(2*(((piks**(1/(k1-1)/k1))-1)/(k1-1)))
         #em1 = [m1]
         piks += 0.001
-
-       # print('m1 =', m1)
     return
 
 
@@ -73,13 +72,23 @@ def calc_mf1():
 def calc_mz1():
     global mz1
     calc_m1()
-    mz1 = math.sqrt((m1**2)/(1+Eps**2))
+    mz1 = np.sqrt((m1**2)/(1+Eps**2))
+    return
+
+
+def calc_theta2():
+    global theta2
+    theta2 = 1
+    dtheta2 = 0.1
+    while theta2 < 2:
+        theta2 = theta2 + dtheta2
     return
 
 
 def calc_m():
-    np.log()
-
+    global m
+    #m = (np.log(r2*(R1/R2)*1/teta2))
+    pass
     return
 
 
