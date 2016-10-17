@@ -30,16 +30,17 @@ M1 = np.array([0.063774118, 0.126879805, 0.178214982])
 
 
 def calc_r():
-    global re2
+
     dr = 0.05
-    re2 = r2
-    while re2 < 1:
-        re2 = r2 + dr
+    r = r2
+    while r <= 1:
+        r = r2 + dr
     return
 
 
 def calc_a():
     global a
+
     a = ((k1-1)/(2*m))*(M1**2)/(1+(1/Eps**2))
     return
 
@@ -77,22 +78,27 @@ def calc_mz1():
 
 
 def calc_theta2():
+
     global theta2
-    theta2 = 1
     dtheta2 = 0.1
-    while theta2 < 2:
+    theta2 = 1
+    while theta2 <= 2:
         theta2 = theta2 + dtheta2
     return
 
 
 def calc_m():
     global m
-    #m = (np.log(r2*(R1/R2)*1/teta2))
-    pass
+    m = (np.log(r2*(R1/R2)*(1/theta2)))
+
     return
 
 
+def calc_mf_vnesh():
+    mf_vnesh = M1/((1+1/Eps**2)**0.5*(1-a*(1/(r**(2*m))-1))**0.5*r**(2*m))
+    return
+
 if __name__ == '__main__':
-    calc_mz1()
+    calc_mf_vnesh()
    #print(mz1)
     #fc()
