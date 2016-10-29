@@ -3,8 +3,6 @@ import sympy
 import numpy as np
 from fractions import Fraction
 
-#Eps = [Fraction(0.577), Fraction(1), Fraction(1.732), Fraction(3.732), Fraction(11.43)]
-
 Eps = np.array([Fraction(0.577), Fraction(1), Fraction(1.732), Fraction(3.732), Fraction(11.43)])
 
 """Eps[1] = Fraction(0.577)
@@ -20,10 +18,19 @@ z2 = 1
 r2 = 0.5
 k1 = 1.4
 k2 = 1.33
-m = 1
-M1 = np.array([0.063774118, 0.126879805, 0.178214982])
+
+
+#M1 = np.array([0.063774118, 0.126879805, 0.178214982])
+''' not finished '''
+
 piks = 1.001
+''' not finished . dpiks = . fpiks = 1.121 '''
+
 pi0 = 1.1
+''' not finished . dpi0 = . fpi0 = 4'''
+
+rm = 0.5
+''' not finished . drm = 0.05 . frm = 1'''
 
 """
 0.063774118
@@ -33,15 +40,20 @@ pi0 = 1.1
 
 
 def main_calc():
-    r = r2
+
+    r = 0.6
+    ''' not finished '''
 
     theta2 = 1
 
     dtheta2 = 0.1
 
     #dr = 0.05
+    b = (2 * rm) / ((1 - r2) * ((2 * rm) - r2 - 1))
 
+    a = -1 * (b / (2 * rm))
 
+    c = 1 - a - b
 
     m = (np.log(r2 * (R1 / R2) * (1 / theta2)))
 
@@ -67,10 +79,12 @@ def main_calc():
     mf_vnutr = (1/r2 ** m) * ((r/r2) ** 2) * (((k1*R1)/(k2*R2)) ** 0.5) * \
                (M1/(((1+(1/Eps ** 2)) ** 0.5) * ((1 - B * (1 - ((r / r2) ** (2 * gamma)))) ** 0.5)))
 
+    _mz = mz1 * (a * (r ** 2) + b * r + c)
 
-    print(mf_vnesh)
 
-    return
+    print(_mz)
+
+
 
 '''def fc():
     calc_a()
@@ -90,7 +104,8 @@ def main_calc():
         theta2 = theta2 + dtheta2
     return
 '''
-
+# need finish for:
+# m,r2,r,theta2
 if __name__ == '__main__':
     main_calc()
    #print(mz1)
