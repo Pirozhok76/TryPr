@@ -18,12 +18,12 @@ class MainWindow(QWidget):
 
     def initUI(self):
 
-        QToolTip.setFont(QFont('Calibri', 10))
+        QToolTip.setFont(QFont('Calibri', 10)) #установка шрифта
 
         self.setToolTip('This is a <b>QWidget</b> widget')
 
         btn = QPushButton ('Вычиислить', self)
-        btn.setToolTip('This is a <b>QPushButton</b> widget')
+        btn.setToolTip('Выполнить вычисление')
         btn.resize(btn.sizeHint())
         btn.move(120, 150)
 
@@ -40,4 +40,6 @@ if __name__ == '__main__':
     #создание объекта приложения
 
     mw = MainWindow()
+
+
     sys.exit(app.exec_())
