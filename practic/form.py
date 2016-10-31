@@ -1,7 +1,12 @@
 import sys
 
-from PyQt5.QtWidgets import QApplication, QWidget
+
+from PyQt5.QtWidgets import (QWidget, QToolTip,
+    QPushButton, QApplication)
+
 from PyQt5.QtGui import QIcon
+
+from PyQt5.QtGui import QFont
 
 
 class MainWindow(QWidget):
@@ -12,6 +17,15 @@ class MainWindow(QWidget):
         self.initUI()
 
     def initUI(self):
+
+        QToolTip.setFont(QFont('Calibri', 10))
+
+        self.setToolTip('This is a <b>QWidget</b> widget')
+
+        btn = QPushButton ('Вычиислить', self)
+        btn.setToolTip('This is a <b>QPushButton</b> widget')
+        btn.resize(btn.sizeHint())
+        btn.move(120, 150)
 
         self.setGeometry(300, 300, 300, 220) # x-y-w-h
         self.setWindowTitle('Icon')
