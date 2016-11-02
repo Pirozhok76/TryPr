@@ -2,7 +2,7 @@ import sys
 
 
 from PyQt5.QtWidgets import (QMessageBox, QToolTip, QPushButton, QApplication,
-                             QDesktopWidget, QMainWindow)
+                             QDesktopWidget, QMainWindow, qApp, QAction)
 
 from PyQt5.QtGui import QIcon
 
@@ -23,15 +23,27 @@ class MainWindow(QMainWindow):
         QToolTip.setFont(QFont('Calibri', 10)) #установка шрифта
 
         btn = QPushButton('Вычислить', self)
-        btn.setToolTip('Вычислить')
+        btn.setStatusTip('Вычислить')
         btn.resize(btn.sizeHint())
         btn.move(120, 150)
+
+        exitAction = QAction(QIcon('exit.png'), '&Выход', self) #добавление пункта меню- Выход
+        exitAction.setShortcut('Ctrl+Q') #горячие клавиши
+        exitAction.setStatusTip('Выход из приложения') #подсказка на статус-баре
+        exitAction.triggered.connect(qApp.quit) #сигнал на закрытие
+
 
         '''quit_btn = QPushButton( 'Выход', self)
         quit_btn.clicked.connect(QCoreApplication.instance().quit) #вызов сигнала "нажатие"
         quit_btn.resize(quit_btn.sizeHint())
         quit_btn.move(50, 150)
         #кнопка выход'''
+
+        self.statusBar() #статусбар
+
+        menubar = self.menuBar() #создание меню
+        filemenu = menubar.addMenu('&Файл') #создание пункта меню "ФАйл"
+        filemenu.addAction(exitAction) #добавление пункта "выход"
 
         self.setGeometry(300, 300, 300, 220) # x-y-w-h
         self.setWindowTitle('MainWindow')
