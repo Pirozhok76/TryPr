@@ -2,13 +2,16 @@ import sys
 
 
 from PyQt5.QtWidgets import (QMessageBox, QToolTip, QPushButton, QApplication,
-                             QDesktopWidget, QMainWindow, qApp, QAction)
+                             QDesktopWidget, QMainWindow, qApp, QAction, QLabel,
+                            QLineEdit)
 
 from PyQt5.QtGui import QIcon
 
 from PyQt5.QtCore import QCoreApplication
 
 from PyQt5.QtGui import QFont
+
+
 
 
 class MainWindow(QMainWindow):
@@ -21,6 +24,17 @@ class MainWindow(QMainWindow):
     def initUI(self):
 
         QToolTip.setFont(QFont('Calibri', 10)) #установка шрифта
+
+        #self.lbl = QLabel(self) #создание лейбла
+
+        qle = QLineEdit(self)  #заготовка для дельты
+
+        qle.move(60, 100)
+        #self.lbl.move(60, 40)
+
+        #qle.textChanged[str].connect(self.onChanged) #вызов onChanged если текст в виджете редактирования строк меняется
+
+
 
         btn = QPushButton('Вычислить', self)
         btn.setStatusTip('Вычислить')
@@ -66,6 +80,10 @@ class MainWindow(QMainWindow):
         qr.moveCenter(cp) #центр прямоуг-ка в центр экрана
         self.move(qr.topLeft()) #гл.окно в верхний левый угол прямоуг-ка
 
+    #def onChanged(self, text):
+
+        #self.lbl.setText(text) #установка напечатанного текста в виджет метки
+        #self.lbl.adjustSize() #вызов метода adjushSize чтобы менять размер метки соотв. длине текста
 
 
 if __name__ == '__main__':
