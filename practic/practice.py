@@ -2,7 +2,7 @@ import math
 import sympy
 import numpy as np
 from fractions import Fraction
-
+#import form
 Eps = np.array([Fraction(0.577), Fraction(1), Fraction(1.732), Fraction(3.732), Fraction(11.43)])
 
 """Eps[1] = Fraction(0.577)
