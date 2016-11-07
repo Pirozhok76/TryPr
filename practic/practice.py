@@ -2,8 +2,10 @@ import math
 import sympy
 import numpy as np
 from fractions import Fraction
-#import form
+
+
 Eps = np.array([Fraction(0.577), Fraction(1), Fraction(1.732), Fraction(3.732), Fraction(11.43)])
+
 
 """Eps[1] = Fraction(0.577)
 Eps[2] = Fraction(1)
@@ -27,6 +29,7 @@ piks = 1.001
 ''' not finished . dpiks = . fpiks = 1.121 '''
 
 pi0 = 1.1
+
 ''' not finished . dpi0 = . fpi0 = 4'''
 
 rm = 0.5
@@ -82,6 +85,7 @@ def main_calc():
     _mz = mz1 * (a * (r ** 2) + b * r + c)
 
 
+
     print(_mz)
 
 
@@ -107,6 +111,7 @@ def main_calc():
 # need finish for:
 # m,r2,r,theta2
 if __name__ == '__main__':
+
     main_calc()
    #print(mz1)
     #fc()
