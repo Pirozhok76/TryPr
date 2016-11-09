@@ -50,18 +50,18 @@ class myWidget(QMainWindow):
             # print('результат:')
             # print(res)
 
-        while theta2 <= theta2_max:
-            res_2 = main_calc(piks, pi0, theta2)
-            theta2 += theta2_d
-
         while pi0 <= pi0_max:
             res_2 = main_calc(piks, pi0, theta2)
             pi0 += pi0_d
             # print('res_2 = ', res_2)
 
+        while theta2 <= theta2_max:
+            res_3 = main_calc(piks, pi0, theta2)
+            theta2 += theta2_d
 
 
-    #def calc_delta(self):
+
+                #def calc_delta(self):
      #   practic.de
 
 if __name__ == '__main__':
