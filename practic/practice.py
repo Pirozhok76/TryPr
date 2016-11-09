@@ -33,7 +33,7 @@ k2 = 1.33
 
 ''' not finished . dpi0 = . fpi0 = 4'''
 
-rm = 0.5
+# rm = 0.5
 ''' not finished . drm = 0.05 . frm = 1'''
 
 """
@@ -43,7 +43,7 @@ rm = 0.5
 """
 
 
-def main_calc(piks, pi0, theta2):
+def main_calc(piks, pi0, theta2, rm):
 
     r = 0.6
     ''' not finished '''
