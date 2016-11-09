@@ -27,24 +27,37 @@ class myWidget(QMainWindow):
     def run(self):
         piks_d = self.wnd.dblSpinBox.value()
         pi0_d = self.wnd.dblSpinBox_2.value()
+        theta2_d = self.wnd.dblSpinBox_7.value()
+
         pi0_min = self.wnd.dblSpinBox_5.value()
         pi0_max = self.wnd.dblSpinBox_6.value()
+
         piks_min = self.wnd.dblSpinBox_3.value()
         piks_max = self.wnd.dblSpinBox_4.value()
+
+        theta2_min = self.wnd.spinBox.value()
+        theta2_max = self.wnd.spinBox_2.value()
+
         # print('piks_d: ' + str(piks_d))
+
+        theta2 = theta2_min
         pi0 = pi0_min
         piks = piks_min
+
         while piks <= piks_max:
-            res_1 = main_calc(piks, pi0)
+            res_1 = main_calc(piks, pi0, theta2)
             piks += piks_d
             # print('результат:')
             # print(res)
 
+        while theta2 <= theta2_max:
+            res_2 = main_calc(piks, pi0, theta2)
+            theta2 += theta2_d
 
         while pi0 <= pi0_max:
-            res_2 = main_calc(piks, pi0)
+            res_2 = main_calc(piks, pi0, theta2)
             pi0 += pi0_d
-            print('res_2 = ', res_2)
+            # print('res_2 = ', res_2)
 
 
 

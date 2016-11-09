@@ -43,14 +43,11 @@ rm = 0.5
 """
 
 
-def main_calc(piks, pi0):
+def main_calc(piks, pi0, theta2):
 
     r = 0.6
     ''' not finished '''
 
-    theta2 = 1
-
-    dtheta2 = 0.1
 
     #dr = 0.05
     b = (2 * rm) / ((1 - r2) * ((2 * rm) - r2 - 1))
