@@ -1,7 +1,7 @@
 from PyQt5 import QtCore, QtGui, uic
 from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget
 import sys
-import practic
+from practice import *
 
 
 class myWidget(QMainWindow):
@@ -11,14 +11,36 @@ class myWidget(QMainWindow):
         self.initUI()
 
     def initUI(self):
-        appearance = self.palette()
-        appearance.setColor(QtGui.QPalette.Normal, QtGui.QPalette.Window,
-                            QtGui.QColor("light blue"))
-        self.setPalette(appearance)
-        self.setAutoFillBackground(True)
+        # appearance = self.palette()
+        # appearance.setColor(QtGui.QPalette.Normal, QtGui.QPalette.Window,
+        #                     QtGui.QColor("silver"))
+        # self.setPalette(appearance)
+        # self.setAutoFillBackground(True)
 
-        uic.loadUi('test.ui', self)
+        self.wnd = uic.loadUi('test.ui', self)
+        self.wnd.btn1.clicked.connect(self.run)
         self.show()
+
+    def run(self):
+        piks_d = self.wnd.dblSpinBox.value()
+        pi0_d = self.wnd.dblSpinBox_2.value()
+        pi0_min = self.wnd.dblSpinBox_5.value()
+        pi0_max = self.wnd.dblSpinBox_6.value()
+        piks_min = self.wnd.dblSpinBox_3.value()
+        piks_max = self.wnd.dblSpinBox_4.value()
+        # print('piks_d: ' + str(piks_d))
+
+        piks = piks_min
+        while piks <= piks_max:
+            res_1 = main_calc(piks)
+            piks += piks_d
+            # print('результат:')
+            # print(res)
+        while pi0 <= pi0_max:
+            res_2 = main_calc(pi0)
+            pi0 += pi0_d
+
+
 
     #def calc_delta(self):
      #   practic.de

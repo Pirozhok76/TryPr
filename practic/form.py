@@ -27,9 +27,9 @@ class MainWindow(QMainWindow):
 
         #self.lbl = QLabel(self) #создание лейбла
 
-        qle = QLineEdit(self)  #заготовка для дельты
+        self.qle = QLineEdit(self)  #заготовка для дельты
 
-        qle.move(60, 100)
+        self.qle.move(60, 100)
         #self.lbl.move(60, 40)
 
         #qle.textChanged[str].connect(self.onChanged) #вызов onChanged если текст в виджете редактирования строк меняется
@@ -40,6 +40,7 @@ class MainWindow(QMainWindow):
         btn.setStatusTip('Вычислить')
         btn.resize(btn.sizeHint())
         btn.move(120, 150)
+        btn.clicked.connect(self.handleButton)
 
         exitAction = QAction(QIcon('exit.png'), '&Выход', self) #добавление пункта меню- Выход
         exitAction.setShortcut('Ctrl+Q') #горячие клавиши
@@ -64,6 +65,9 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QIcon('icon.png'))
 
         self.show()
+
+    def handleButton(self):
+        print(self.qle.text())
 
     def closeEvent(self, event): # генерация события при закрытии
         reply = QMessageBox.question(self, 'Внимание!',

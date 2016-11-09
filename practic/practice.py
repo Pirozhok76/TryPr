@@ -25,7 +25,8 @@ k2 = 1.33
 #M1 = np.array([0.063774118, 0.126879805, 0.178214982])
 ''' not finished '''
 
-piks = 1.001
+# piks_min = 1.001
+# piks_max = 1.121
 ''' not finished . dpiks = . fpiks = 1.121 '''
 
 pi0 = 1.1
@@ -42,7 +43,7 @@ rm = 0.5
 """
 
 
-def main_calc():
+def main_calc(piks, pi0):
 
     r = 0.6
     ''' not finished '''
@@ -86,7 +87,8 @@ def main_calc():
 
 
 
-    print(_mz)
+    #print(_mz)
+    return [M1, list(mz1)]
 
 
 

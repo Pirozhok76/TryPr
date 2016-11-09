@@ -34,20 +34,20 @@
      <string>Вычислить</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="lbl_1">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>30</y>
       <width>51</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>PIkc = </string>
+     <string>1111</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="lbl_2">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -57,7 +57,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>delta PIkc = </string>
+     <string>333</string>
     </property>
    </widget>
    <widget class="QDoubleSpinBox" name="dblSpinBox">
@@ -85,7 +85,7 @@
      <double>0.001000000000000</double>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="lbl_3">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -98,17 +98,17 @@
      <string>delta PI0 = </string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="lbl_4">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>110</y>
       <width>51</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>PI0 = </string>
+     <string>222</string>
     </property>
    </widget>
    <widget class="QDoubleSpinBox" name="dblSpinBox_2">
@@ -136,30 +136,130 @@
      <double>0.001000000000000</double>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QDoubleSpinBox" name="dblSpinBox_3">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>110</y>
-      <width>81</width>
-      <height>21</height>
+      <x>70</x>
+      <y>30</y>
+      <width>61</width>
+      <height>22</height>
      </rect>
     </property>
-    <property name="text">
-     <string>1,1 .. 4</string>
+    <property name="wrapping">
+     <bool>true</bool>
+    </property>
+    <property name="decimals">
+     <number>5</number>
+    </property>
+    <property name="minimum">
+     <double>0.001000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>0.500000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.001000000000000</double>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QDoubleSpinBox" name="dblSpinBox_4">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>160</x>
       <y>30</y>
-      <width>81</width>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="wrapping">
+     <bool>true</bool>
+    </property>
+    <property name="decimals">
+     <number>5</number>
+    </property>
+    <property name="minimum">
+     <double>0.001000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>0.500000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.001000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_7">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>21</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>1,001 .. 1,121</string>
+     <string>до</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="dblSpinBox_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="wrapping">
+     <bool>true</bool>
+    </property>
+    <property name="decimals">
+     <number>5</number>
+    </property>
+    <property name="minimum">
+     <double>0.001000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>0.500000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.001000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_8">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>110</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>до</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="dblSpinBox_6">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="wrapping">
+     <bool>true</bool>
+    </property>
+    <property name="decimals">
+     <number>5</number>
+    </property>
+    <property name="minimum">
+     <double>0.001000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>0.500000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.001000000000000</double>
     </property>
    </widget>
   </widget>
