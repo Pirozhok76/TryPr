@@ -11,13 +11,16 @@ class myWidget(QMainWindow):
         self.initUI()
 
     def initUI(self):
-        # appearance = self.palette()
-        # appearance.setColor(QtGui.QPalette.Normal, QtGui.QPalette.Window,
-        #                     QtGui.QColor("silver"))
-        # self.setPalette(appearance)
-        # self.setAutoFillBackground(True)
+        appearance = self.palette()
+        appearance.setColor(QtGui.QPalette.Normal, QtGui.QPalette.Window,
+                            QtGui.QColor("white"))
+        self.setPalette(appearance)
+        self.setAutoFillBackground(True)
+
+
 
         self.wnd = uic.loadUi('test.ui', self)
+        # self.wnd.lbl_1.setText(u"\u03C0" + 'kc')
         self.wnd.btn1.clicked.connect(self.run)
         self.show()
 
@@ -29,16 +32,19 @@ class myWidget(QMainWindow):
         piks_min = self.wnd.dblSpinBox_3.value()
         piks_max = self.wnd.dblSpinBox_4.value()
         # print('piks_d: ' + str(piks_d))
-
+        pi0 = pi0_min
         piks = piks_min
         while piks <= piks_max:
-            res_1 = main_calc(piks)
+            res_1 = main_calc(piks, pi0)
             piks += piks_d
             # print('результат:')
             # print(res)
+
+
         while pi0 <= pi0_max:
-            res_2 = main_calc(pi0)
+            res_2 = main_calc(piks, pi0)
             pi0 += pi0_d
+            print('res_2 = ', res_2)
 
 
 

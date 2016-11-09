@@ -29,7 +29,7 @@ k2 = 1.33
 # piks_max = 1.121
 ''' not finished . dpiks = . fpiks = 1.121 '''
 
-pi0 = 1.1
+# pi0 = 1.1
 
 ''' not finished . dpi0 = . fpi0 = 4'''
 
@@ -88,7 +88,9 @@ def main_calc(piks, pi0):
 
 
     #print(_mz)
-    return [M1, list(mz1)]
+    return [M1, list(mz1),
+            list(gamma),
+            list(mf_vnutr)]
 
 
 
