@@ -1,7 +1,12 @@
 ﻿from PyQt5 import QtCore, QtGui, uic
-from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QDesktopWidget, QAction, qApp
+
+from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget,\
+    QDesktopWidget, QAction, qApp, QFileDialog
+
 from PyQt5.QtGui import QIcon
+
 import sys
+
 from practice import *
 
 
@@ -27,14 +32,17 @@ class myWidget(QMainWindow):
         exitAction.setStatusTip('Выход из приложения')  # подсказка на статус-баре
         exitAction.triggered.connect(qApp.quit)  # сигнал на закрытие
 
-        self.saveAction = QAction('Сохранить результат в файл')
+        saveAction = QAction(QIcon('save.png'), 'Сохранить результат в файл', self)
+        saveAction.setShortcut('Ctrl+S')
+        saveAction.setStatusTip('Сохранить результаты в файл')
+        saveAction.triggered.connect(self.showDialog)
+
 
         menubar = self.menuBar()  # создание меню
         filemenu = menubar.addMenu('&Файл')  # создание пункта меню "ФАйл"
-        filemenu.addAction(self.saveAction)
+        filemenu.addAction(saveAction)
         filemenu.addAction(exitAction)  # добавление пункта "выход"
 
-        # self.wnd.lbl_1.setText(u"\u03C0" + 'kc')
         self.wnd.btn1.clicked.connect(self.run)
         self.wnd.dblSpinBox_13.valueChanged.connect(self._onSpinBox_13ValueChanged)  # для r_vnutr and r_vnesh
 
@@ -49,6 +57,19 @@ class myWidget(QMainWindow):
     def _onSpinBox_13ValueChanged(self):
         self.wnd.dblSpinBox_9.setValue(self.wnd.dblSpinBox_13.value())
         self.wnd.dblSpinBox_16.setValue(self.wnd.dblSpinBox_13.value())
+
+
+    def showDialog(self):
+
+        fname = QFileDialog.getSaveFileName(self, 'Open file', '/results.txt')[0]
+
+        f = open(fname, 'r')
+        #
+        # with f:
+        #     data = f.save()
+        #     self.res_1()
+
+
 
     def run(self):
 

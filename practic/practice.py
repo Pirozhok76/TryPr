@@ -58,7 +58,7 @@ def main_calc(piks, pi0, theta2, r_vnesh, r_vnutr, r2, eps):
 
     # _mz = mz1 * (a * (r ** 2) + b * r + c)
 
-    return [mf_vnesh, mf_vnutr]
+    return mf_vnesh, mf_vnutr
 
 
 
