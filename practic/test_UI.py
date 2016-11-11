@@ -162,7 +162,12 @@ class myWidget(QMainWindow):
 
             #self.wnd.textEdit.setText(str(self.res_7[0] ) + ('  ') + str(self.res_7[1]))
             #self.wnd.listWidget.text(str(self.res_7[0]))
-        #self.wnd.textEdit_2.setValue(self.res_7[1])
+            #self.wnd.textEdit_2.setValue(self.res_7[1])
+            """ textEdit
+                lineEdit
+                textBrowser
+                listWidget
+            """
 
     # def calc_delta(self):
     # practic.de
