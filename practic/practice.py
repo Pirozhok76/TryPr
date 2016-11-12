@@ -23,54 +23,59 @@ k2 = 1.33
 def main_calc(piks, pi0, theta2, r_vnesh, r_vnutr, r2, eps):
 
 
-    ''' not finished '''
+	''' not finished '''
 
 
-    # b = (2 * rm) / ((1 - r2) * ((2 * rm) - r2 - 1))
+	# b = (2 * rm) / ((1 - r2) * ((2 * rm) - r2 - 1))
 
-    # a = -1 * (b / (2 * rm))
+	# a = -1 * (b / (2 * rm))
 
-    # c = 1 - a - b
+	# c = 1 - a - b
 
-    m = (np.log(r2 * (R1 / R2) * (1 / theta2)))
+	m = (np.log(r2 * (R1 / R2) * (1 / theta2)))
 
-    M1 = np.sqrt(2 * (((piks ** (1 / (k1 - 1) / k1)) - 1) / (k1 - 1)))
+	M1 = np.sqrt(2 * (((piks ** (1 / (k1 - 1) / k1)) - 1) / (k1 - 1)))
 
-    A = ((k1 - 1) / (2 * m)) * (M1 ** 2) / (1 + (1 / eps ** 2))
+	A = ((k1 - 1) / (2 * m)) * (M1 ** 2) / (1 + (1 / eps ** 2))
 
-    mf1 = M1 / ((1 + (1 / (eps ** 2))) ** 0.5)
+	mf1 = M1 / ((1 + (1 / (eps ** 2))) ** 0.5)
 
-    mz1 = (((M1 ** 2) / (1 + eps ** 2)) ** (1 / 2))
+	mz1 = (((M1 ** 2) / (1 + eps ** 2)) ** (1 / 2))
 
-    Fi2 = 1 - A * (1 / ((r2 ** (2 * m)) - 1))
+	Fi2 = 1 - A * (1 / ((r2 ** (2 * m)) - 1))
 
-    gamma = ((k1 * (k2 - 1) * z1 * R1) / (2 * k2 * z2 * R2)) * \
-            ((M1 ** 2) / ((1 + (1 / eps ** 2)) * (r2 ** (2 * m)) * theta2 * Fi2) *
-             (1 - ((1 / pi0) ** ((k2 - 1) / k2))) * (1 / (Fi2 ** ((k1 * (k2 - 1)) / (k2 * (k1 - 1))))))
+	gamma = ((k1 * (k2 - 1) * z1 * R1) / (2 * k2 * z2 * R2)) * \
+			((M1 ** 2) / ((1 + (1 / eps ** 2)) * (r2 ** (2 * m)) * theta2 * Fi2) *
+			 (1 - ((1 / pi0) ** ((k2 - 1) / k2))) * (1 / (Fi2 ** ((k1 * (k2 - 1)) / (k2 * (k1 - 1))))))
+	print(gamma)
 
-    B = (k1 * (k2 - 1) * (M1 ** 2) * z1 * R1) /\
-        (2 * k2 * (1 + (1 / (eps ** 2))) * (r2 ** (2 * m)) * theta2 * Fi2 * z2 * R2)
+	B = (k1 * (k2 - 1) * (M1 ** 2) * z1 * R1) /\
+		(2 * k2 * (1 + (1 / (eps ** 2))) * (r2 ** (2 * m)) * theta2 * Fi2 * z2 * R2)
 
-    mf_vnesh = M1 / ((1 + 1 / eps ** 2) ** 0.5 * (1 - A * (1 / (r_vnesh ** (2 * m)) - 1)) ** 0.5 * r_vnesh ** (2 * m))
+	if r_vnesh is not None:
+		mf_vnesh = M1 / ((1 + 1 / eps ** 2) ** 0.5 * (1 - A * (1 / (r_vnesh ** (2 * m)) - 1)) ** 0.5 * r_vnesh ** (2 * m))
+		return mf_vnesh
 
-    mf_vnutr = (1/r2 ** m) * ((r_vnutr/r2) ** 2) * (((k1*R1)/(k2*R2)) ** 0.5) * \
-               (M1 / (((1 + (1 / eps ** 2)) ** 0.5) * ((1 - B * (1 - ((r_vnutr / r2) ** (2 * gamma)))) ** 0.5)))
+	if r_vnutr is not None:
+		mf_vnutr = (1/r2 ** m) * ((r_vnutr/r2) ** 2) * (((k1*R1)/(k2*R2)) ** 0.5) * \
+				   (M1 / (((1 + (1 / eps ** 2)) ** 0.5) * ((1 - B * (1 - ((r_vnutr / r2) ** (2 * gamma)))) ** 0.5)))
+		return mf_vnutr
 
-    # _mz = mz1 * (a * (r ** 2) + b * r + c)
+	# _mz = mz1 * (a * (r ** 2) + b * r + c)
 
-    return mf_vnesh, mf_vnutr
+
 
 
 
 '''def fc():
-    calc_a()
-    calc_r()
-    fi = 1-a*(1/(re2**(2*m))-1)
-    print('fi=', fi)
-    return'''
+	calc_a()
+	calc_r()
+	fi = 1-a*(1/(re2**(2*m))-1)
+	print('fi=', fi)
+	return'''
 
 if __name__ == '__main__':
 
-    main_calc()
+	main_calc()
    #print(mz1)
-    #fc()
+	#fc()

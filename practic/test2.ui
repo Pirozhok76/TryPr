@@ -24,8 +24,8 @@
    <widget class="QPushButton" name="btn1">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>290</y>
+      <x>10</x>
+      <y>420</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -1146,8 +1146,8 @@ p, li { white-space: pre-wrap; }
      <rect>
       <x>130</x>
       <y>270</y>
-      <width>261</width>
-      <height>131</height>
+      <width>1100</width>
+      <height>180</height>
      </rect>
     </property>
     <property name="verticalScrollBarPolicy">
@@ -1167,6 +1167,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
    </widget>
+<!--
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
@@ -1183,6 +1184,8 @@ p, li { white-space: pre-wrap; }
      <bool>false</bool>
     </property>
    </widget>
+-->
+<!--
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
@@ -1193,6 +1196,7 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
    </widget>
+-->
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
@@ -1209,6 +1213,7 @@ p, li { white-space: pre-wrap; }
      <string>Listwidget</string>
     </property>
    </widget>
+<!--
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
@@ -1225,6 +1230,8 @@ p, li { white-space: pre-wrap; }
      <string>lineEdit</string>
     </property>
    </widget>
+-->
+<!--
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
@@ -1241,6 +1248,8 @@ p, li { white-space: pre-wrap; }
      <string>textBrowser</string>
     </property>
    </widget>
+-->
+<!--
    <widget class="QListView" name="listView">
     <property name="geometry">
      <rect>
@@ -1251,6 +1260,8 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
    </widget>
+-->
+<!--
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
@@ -1267,6 +1278,7 @@ p, li { white-space: pre-wrap; }
      <string>listView</string>
     </property>
    </widget>
+-->
    <widget class="QPlainTextEdit" name="plainTextEdit">
     <property name="geometry">
      <rect>
