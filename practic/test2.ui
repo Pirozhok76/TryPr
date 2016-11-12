@@ -1234,6 +1234,9 @@ p, li { white-space: pre-wrap; }
    </property>
   </action>
   <action name="action">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Сохранить результаты в файл</string>
    </property>
@@ -1248,5 +1251,22 @@ p, li { white-space: pre-wrap; }
   </action>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btn1</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>action</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>441</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

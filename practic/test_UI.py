@@ -31,12 +31,12 @@ class myWidget(QMainWindow):
         self.saveAction.setStatusTip('Сохранить результаты в файл')
         self.saveAction.triggered.connect(self.showDialog)
 
-        self.exitAction = self.wnd.action_2
 
+        self.exitAction = self.wnd.action_2
         self.exitAction.setShortcut('Ctrl+Q')
         self.exitAction.setStatusTip('Выход из приложения')  # подсказка на статус-баре
 
-        # exitAction.triggered.connect(qApp.quit)
+        self.exitAction.triggered.connect(qApp.quit)
 
 
         self.wnd.btn1.clicked.connect(self.run)
@@ -56,7 +56,7 @@ class myWidget(QMainWindow):
         self.wnd.dblSpinBox_16.setValue(self.wnd.dblSpinBox_13.value())
 
     def showDialog(self):
-        fname = QFileDialog.getSaveFileName(self, 'Open file', '/results.txt')[0]
+        fname = QFileDialog.getSaveFileName(self, 'Сохранить файл', '/results.txt')[0]
         f = open(fname, 'w')
         f.write(self.wnd.textEdit.toPlainText() + self.wnd.textEdit_2.toPlainText())
         f.close()
