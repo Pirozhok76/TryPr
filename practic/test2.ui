@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>973</width>
-    <height>725</height>
+    <width>1110</width>
+    <height>489</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,10 +24,10 @@
    <widget class="QPushButton" name="btn1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>420</y>
-      <width>81</width>
-      <height>31</height>
+      <x>510</x>
+      <y>400</y>
+      <width>111</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -39,8 +39,8 @@
      <rect>
       <x>10</x>
       <y>30</y>
-      <width>231</width>
-      <height>101</height>
+      <width>201</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -53,22 +53,22 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>10</y>
-       <width>41</width>
-       <height>31</height>
+       <y>0</y>
+       <width>51</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;π&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:14pt; vertical-align:sub;&quot;&gt;кс &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt;&quot;&gt;от &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;π&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:14pt; vertical-align:sub;&quot;&gt;кс &lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;от&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="dblSpinBox_3">
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>20</y>
-       <width>61</width>
-       <height>22</height>
+       <y>10</y>
+       <width>51</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -90,10 +90,10 @@
     <widget class="QLabel" name="lbl_7">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>20</y>
+       <x>120</x>
+       <y>10</y>
        <width>21</width>
-       <height>21</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -103,10 +103,10 @@
     <widget class="QDoubleSpinBox" name="dblSpinBox_4">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>61</width>
-       <height>22</height>
+       <x>140</x>
+       <y>10</y>
+       <width>51</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -133,7 +133,7 @@
       <rect>
        <x>10</x>
        <y>50</y>
-       <width>81</width>
+       <width>71</width>
        <height>31</height>
       </rect>
      </property>
@@ -142,23 +142,23 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'arial,sans-serif'; font-size:16pt; color:#222222; background-color:#ffffff;&quot;&gt;Δ &lt;/span&gt;&lt;img src=&quot;file:///C:\Users\arist\AppData\Local\Temp\msohtmlclip1\01\clip_image002.png&quot; width=&quot;11&quot; height=&quot;26&quot; /&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; vertical-align:sub;&quot;&gt;кс &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; font-weight:600;&quot;&gt;=&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'arial,sans-serif'; font-size:16pt; color:#222222; background-color:#ffffff;&quot;&gt;Δ &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;π&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:14pt; vertical-align:sub;&quot;&gt;кс &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; vertical-align:sub;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; font-weight:600;&quot;&gt;=&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="dblSpinBox">
      <property name="geometry">
       <rect>
        <x>80</x>
-       <y>60</y>
-       <width>101</width>
-       <height>22</height>
+       <y>51</y>
+       <width>51</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
       <bool>true</bool>
      </property>
      <property name="decimals">
-      <number>4</number>
+      <number>3</number>
      </property>
      <property name="minimum">
       <double>0.001000000000000</double>
@@ -167,7 +167,7 @@ p, li { white-space: pre-wrap; }
       <double>1.000000000000000</double>
      </property>
      <property name="singleStep">
-      <double>0.000500000000000</double>
+      <double>0.005000000000000</double>
      </property>
      <property name="value">
       <double>0.010000000000000</double>
@@ -177,10 +177,10 @@ p, li { white-space: pre-wrap; }
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>231</width>
-      <height>101</height>
+      <x>570</x>
+      <y>30</y>
+      <width>171</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -193,9 +193,9 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>20</y>
-       <width>71</width>
-       <height>22</height>
+       <y>11</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -227,16 +227,16 @@ p, li { white-space: pre-wrap; }
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;π&lt;/span&gt;&lt;span style=&quot; font-size:16pt; vertical-align:sub;&quot;&gt;0 от &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:18pt;&quot;&gt;π&lt;/span&gt;&lt;span style=&quot; font-size:16pt; vertical-align:sub;&quot;&gt;0 &lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;от &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="lbl_8">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>20</y>
+       <x>100</x>
+       <y>10</y>
        <width>21</width>
-       <height>21</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -246,10 +246,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QDoubleSpinBox" name="dblSpinBox_6">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>61</width>
-       <height>22</height>
+       <x>120</x>
+       <y>10</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -288,9 +288,9 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>60</y>
-       <width>101</width>
-       <height>22</height>
+       <y>51</y>
+       <width>51</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -303,7 +303,7 @@ p, li { white-space: pre-wrap; }
       <double>0.000000000000000</double>
      </property>
      <property name="maximum">
-      <double>5.000000000000000</double>
+      <double>1.000000000000000</double>
      </property>
      <property name="singleStep">
       <double>0.050000000000000</double>
@@ -316,10 +316,10 @@ p, li { white-space: pre-wrap; }
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>140</y>
-      <width>211</width>
-      <height>101</height>
+      <x>400</x>
+      <y>30</y>
+      <width>161</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -331,36 +331,23 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="lbl_9">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
-       <width>21</width>
-       <height>41</height>
+       <x>10</x>
+       <y>0</y>
+       <width>41</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'serif'; font-size:14pt; color:#252525; background-color:#f9f9f9;&quot;&gt;θ&lt;/span&gt;&lt;span style=&quot; font-family:'serif'; font-size:14pt; font-weight:600; color:#252525; background-color:#f9f9f9; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lbl_10">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>20</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;от&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'serif'; font-size:14pt; color:#252525; background-color:#f9f9f9;&quot;&gt;θ&lt;/span&gt;&lt;span style=&quot; font-family:'serif'; font-size:14pt; font-weight:600; color:#252525; background-color:#f9f9f9; vertical-align:sub;&quot;&gt;2 &lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;от&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="lbl_11">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>20</y>
+       <x>100</x>
+       <y>10</y>
        <width>21</width>
-       <height>21</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -371,9 +358,9 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>20</y>
-       <width>42</width>
-       <height>22</height>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="minimum">
@@ -389,10 +376,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QSpinBox" name="spinBox_2">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>20</y>
-       <width>42</width>
-       <height>22</height>
+       <x>120</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="minimum">
@@ -408,10 +395,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="lbl_5">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>50</y>
+       <x>10</x>
+       <y>40</y>
        <width>81</width>
-       <height>41</height>
+       <height>51</height>
       </rect>
      </property>
      <property name="text">
@@ -425,10 +412,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QDoubleSpinBox" name="dblSpinBox_7">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>60</y>
-       <width>61</width>
-       <height>22</height>
+       <x>70</x>
+       <y>50</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -454,10 +441,10 @@ p, li { white-space: pre-wrap; }
    <widget class="QFrame" name="frame_4">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>920</x>
       <y>30</y>
-      <width>201</width>
-      <height>101</height>
+      <width>161</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -470,38 +457,38 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
+       <y>10</y>
        <width>41</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;r от&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;r от&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="dblSpinBox_9">
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>30</y>
-       <width>61</width>
-       <height>22</height>
+       <y>11</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
       <bool>true</bool>
      </property>
      <property name="decimals">
-      <number>2</number>
+      <number>1</number>
      </property>
      <property name="minimum">
       <double>0.500000000000000</double>
      </property>
      <property name="maximum">
-      <double>2.000000000000000</double>
+      <double>0.800000000000000</double>
      </property>
      <property name="singleStep">
-      <double>0.005000000000000</double>
+      <double>0.100000000000000</double>
      </property>
      <property name="value">
       <double>0.500000000000000</double>
@@ -510,10 +497,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="lbl_16">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>30</y>
+       <x>90</x>
+       <y>10</y>
        <width>21</width>
-       <height>21</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -523,26 +510,26 @@ p, li { white-space: pre-wrap; }
     <widget class="QDoubleSpinBox" name="dblSpinBox_10">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>30</y>
-       <width>61</width>
-       <height>22</height>
+       <x>110</x>
+       <y>10</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
       <bool>true</bool>
      </property>
      <property name="decimals">
-      <number>2</number>
+      <number>1</number>
      </property>
      <property name="minimum">
       <double>0.000000000000000</double>
      </property>
      <property name="maximum">
-      <double>2.000000000000000</double>
+      <double>1.000000000000000</double>
      </property>
      <property name="singleStep">
-      <double>0.005000000000000</double>
+      <double>0.100000000000000</double>
      </property>
      <property name="value">
       <double>1.000000000000000</double>
@@ -552,7 +539,7 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>60</y>
+       <y>50</y>
        <width>81</width>
        <height>31</height>
       </rect>
@@ -569,54 +556,35 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>70</y>
-       <width>101</width>
-       <height>21</height>
+       <y>50</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
       <bool>true</bool>
      </property>
      <property name="decimals">
-      <number>3</number>
+      <number>1</number>
      </property>
      <property name="minimum">
       <double>0.000000000000000</double>
      </property>
      <property name="maximum">
-      <double>1.000000000000000</double>
+      <double>0.800000000000000</double>
      </property>
      <property name="singleStep">
-      <double>0.005000000000000</double>
+      <double>0.100000000000000</double>
      </property>
      <property name="value">
       <double>0.100000000000000</double>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>10</y>
-       <width>121</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="text">
-      <string> Внешний вихрь</string>
-     </property>
-     <property name="wordWrap">
-      <bool>false</bool>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
+       <y>0</y>
        <width>16</width>
        <height>16</height>
       </rect>
@@ -629,7 +597,7 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>50</y>
+       <y>40</y>
        <width>16</width>
        <height>16</height>
       </rect>
@@ -642,10 +610,10 @@ p, li { white-space: pre-wrap; }
    <widget class="QFrame" name="frame_6">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>140</y>
-      <width>201</width>
-      <height>101</height>
+      <x>750</x>
+      <y>30</y>
+      <width>161</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -658,22 +626,22 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
+       <y>10</y>
        <width>41</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;r от&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;r от&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="dblSpinBox_15">
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>30</y>
-       <width>61</width>
-       <height>22</height>
+       <y>10</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -698,10 +666,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="lbl_22">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>30</y>
+       <x>90</x>
+       <y>10</y>
        <width>21</width>
-       <height>21</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -711,10 +679,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QDoubleSpinBox" name="dblSpinBox_16">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>30</y>
-       <width>61</width>
-       <height>22</height>
+       <x>110</x>
+       <y>10</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -740,7 +708,7 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>60</y>
+       <y>50</y>
        <width>81</width>
        <height>31</height>
       </rect>
@@ -750,33 +718,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'arial,sans-serif'; font-size:16pt; color:#222222; background-color:#ffffff;&quot;&gt;Δ r&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; vertical-align:sub;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; font-weight:600;&quot;&gt;=&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>10</y>
-       <width>121</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="text">
-      <string>Внутренний вихрь</string>
-     </property>
-     <property name="wordWrap">
-      <bool>false</bool>
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'arial,sans-serif'; font-size:16pt; color:#222222; background-color:#ffffff;&quot;&gt;Δ &lt;/span&gt;&lt;span style=&quot; font-family:'arial,sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff;&quot;&gt;r&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; vertical-align:sub;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; font-weight:600;&quot;&gt;=&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
+       <y>0</y>
        <width>16</width>
        <height>16</height>
       </rect>
@@ -789,7 +738,7 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>50</y>
+       <y>40</y>
        <width>16</width>
        <height>16</height>
       </rect>
@@ -802,9 +751,9 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>70</y>
-       <width>101</width>
-       <height>21</height>
+       <y>50</y>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -840,13 +789,161 @@ p, li { white-space: pre-wrap; }
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Укажите исходные данные:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>71</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>30 °</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>45 °</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>60 °</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>75 °</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>85 °</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>180</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Mf (внешний вихрь):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>180</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Mf (внутренний вихрь):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>200</y>
+      <width>461</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>200</y>
+      <width>461</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
    <widget class="QFrame" name="frame_7">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>220</x>
       <y>30</y>
-      <width>211</width>
-      <height>101</height>
+      <width>171</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -860,8 +957,8 @@ p, li { white-space: pre-wrap; }
       <rect>
        <x>50</x>
        <y>10</y>
-       <width>61</width>
-       <height>22</height>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -886,10 +983,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="lbl_25">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>100</x>
        <y>10</y>
        <width>21</width>
-       <height>21</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -910,16 +1007,16 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'arial,sans-serif'; font-size:16pt; color:#222222; background-color:#ffffff;&quot;&gt;Δ &lt;/span&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;r&lt;/span&gt;&lt;span style=&quot; font-size:14pt; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; vertical-align:sub;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; font-weight:600;&quot;&gt;=&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'arial,sans-serif'; font-size:16pt; color:#222222; background-color:#ffffff;&quot;&gt;Δ &lt;/span&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;r&lt;/span&gt;&lt;span style=&quot; font-size:14pt; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; vertical-align:sub;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:16pt; font-weight:600;&quot;&gt;=&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="dblSpinBox_19">
      <property name="geometry">
       <rect>
-       <x>80</x>
+       <x>70</x>
        <y>50</y>
-       <width>101</width>
-       <height>22</height>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -983,10 +1080,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QDoubleSpinBox" name="dblSpinBox_20">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>120</x>
        <y>10</y>
-       <width>61</width>
-       <height>22</height>
+       <width>41</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="wrapping">
@@ -1009,338 +1106,114 @@ p, li { white-space: pre-wrap; }
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_5">
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>250</y>
-      <width>111</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::WinPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QRadioButton" name="radioButton">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>40</y>
-       <width>82</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>30 °</string>
-     </property>
-     <property name="checked">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>60</y>
-       <width>82</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>45 °</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_3">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>82</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>60 °</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>100</y>
-       <width>82</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>75 °</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_5">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>120</y>
-       <width>82</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>85 °</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>91</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="text">
-      <string>Угол закрутки</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>250</y>
-      <width>211</width>
+      <x>750</x>
+      <y>10</y>
+      <width>141</width>
       <height>20</height>
      </rect>
     </property>
     <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="text">
-     <string>Mf (внешний вихрь) (textEdit</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Внутренний вихрь:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>250</y>
-      <width>131</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="text">
-     <string>Mf (внутренний вихрь)</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="textEdit">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>270</y>
-      <width>1100</width>
-      <height>180</height>
-     </rect>
-    </property>
-    <property name="verticalScrollBarPolicy">
-     <enum>Qt::ScrollBarAsNeeded</enum>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>450</y>
-      <width>271</width>
-      <height>71</height>
-     </rect>
-    </property>
-   </widget>
-<!--
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>420</y>
-      <width>201</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-    <property name="clearButtonEnabled">
+    <property name="wordWrap">
      <bool>false</bool>
     </property>
    </widget>
--->
-<!--
-   <widget class="QListWidget" name="listWidget">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>270</y>
-      <width>256</width>
-      <height>81</height>
+      <x>920</x>
+      <y>10</y>
+      <width>141</width>
+      <height>16</height>
      </rect>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Внешний вихрь:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
    </widget>
--->
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Угол закрутки:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>250</y>
-      <width>131</width>
-      <height>20</height>
+      <x>110</x>
+      <y>140</y>
+      <width>401</width>
+      <height>31</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
     </property>
     <property name="text">
-     <string>Listwidget</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Результат:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-<!--
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>400</y>
-      <width>131</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="text">
-     <string>lineEdit</string>
-    </property>
-   </widget>
--->
-<!--
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>430</y>
-      <width>131</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="text">
-     <string>textBrowser</string>
-    </property>
-   </widget>
--->
-<!--
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>390</y>
-      <width>256</width>
-      <height>71</height>
-     </rect>
-    </property>
-   </widget>
--->
-<!--
-   <widget class="QLabel" name="label_16">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>370</y>
-      <width>131</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="text">
-     <string>listView</string>
-    </property>
-   </widget>
--->
-   <widget class="QPlainTextEdit" name="plainTextEdit">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>550</y>
-      <width>281</width>
-      <height>71</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_17">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>530</y>
-      <width>131</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="text">
-     <string>plainTextEdit</string>
-    </property>
-   </widget>
-   <widget class="QColumnView" name="columnView">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>500</y>
-      <width>256</width>
-      <height>91</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_18">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>480</y>
-      <width>131</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="text">
-     <string>columnView</string>
-    </property>
-   </widget>
+   <zorder>btn1</zorder>
+   <zorder>frame</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>frame_3</zorder>
+   <zorder>frame_4</zorder>
+   <zorder>frame_6</zorder>
+   <zorder>label_9</zorder>
+   <zorder>frame_5</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_12</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>textEdit_2</zorder>
+   <zorder>frame_7</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_13</zorder>
+   <zorder>radioButton_4</zorder>
+   <zorder>radioButton_2</zorder>
+   <zorder>radioButton_3</zorder>
+   <zorder>radioButton</zorder>
+   <zorder>radioButton_5</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>973</width>
+     <width>1110</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="separator"/>
+    <addaction name="action_2"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="exitMenu">
@@ -1360,24 +1233,20 @@ p, li { white-space: pre-wrap; }
     <string>Сохранить результат в файл</string>
    </property>
   </action>
+  <action name="action">
+   <property name="text">
+    <string>Сохранить результаты в файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>exitMenu</sender>
-   <signal>triggered()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>399</x>
-     <y>299</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
