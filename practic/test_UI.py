@@ -25,14 +25,14 @@ class myWidget(QMainWindow):
 
         self.wnd = uic.loadUi('test2.ui', self)
 
+        self.wnd.setWindowIcon(QIcon('icon.png'))
+
         self.wnd.action.setEnabled(False)
 
         self.saveAction = self.wnd.action
-
         self.saveAction.setShortcut('Ctrl+S')
         self.saveAction.setStatusTip('Сохранить результаты в файл')
         self.saveAction.triggered.connect(self.showDialog)
-
 
         self.exitAction = self.wnd.action_2
         self.exitAction.setShortcut('Ctrl+Q')
@@ -40,10 +40,11 @@ class myWidget(QMainWindow):
 
         self.exitAction.triggered.connect(qApp.quit)
 
-
         self.wnd.btn1.clicked.connect(self.run)
         # self.wnd.btn1.clicked.connect(self.chEnAction())
         self.wnd.dblSpinBox_13.valueChanged.connect(self._onSpinBox_13ValueChanged)  # для r_vnutr and r_vnesh
+        self.wnd.dblSpinBox_9.valueChanged.connect(self._onSpinBox_9ValueChanged)
+        self.wnd.dblSpinBox_16.valueChanged.connect(self._onSpinBox_16ValueChanged)
 
 
         qr = self.frameGeometry()  # получ-е прямоугольника,опред-го геометрию гл. окна(включает любые рамки)
@@ -52,6 +53,12 @@ class myWidget(QMainWindow):
         self.move(qr.topLeft())  # гл.окно в верхний левый угол прямоуг-ка
 
         self.show()
+
+    def _onSpinBox_9ValueChanged(self):
+        self.wnd.dblSpinBox_13.setValue(self.wnd.dblSpinBox_9.value())
+
+    def _onSpinBox_16ValueChanged(self):
+        self.wnd.dblSpinBox_13.setValue(self.wnd.dblSpinBox_16.value())
 
     def _onSpinBox_13ValueChanged(self):
         self.wnd.dblSpinBox_9.setValue(self.wnd.dblSpinBox_13.value())
@@ -62,10 +69,6 @@ class myWidget(QMainWindow):
         f = open(fname, 'w')
         f.write(self.wnd.textEdit.toPlainText() + self.wnd.textEdit_2.toPlainText())
         f.close()
-
-
-
-
 
     def run(self):
         # self.wnd.dblSpinBox_16.value() = self.wnd.dblSpinBox_13.value() для r_vnutr
@@ -105,7 +108,6 @@ class myWidget(QMainWindow):
         self.wnd.radioButton_4.setEnabled(False)
         self.wnd.radioButton_5.setEnabled(False)
 
-
         r_vnesh = r_vnesh_min
         while r_vnesh <= r_vnesh_max:
             self.calc_part(self.wnd.textEdit, None, r_vnesh)
@@ -142,8 +144,6 @@ class myWidget(QMainWindow):
             self.wnd.radioButton_5.setEnabled(True)
             """ энэйблить контрол"""
 
-
-
     def calc_part(self, textEdit, r_vnutr, r_vnesh):
         if self.wnd.radioButton.isChecked():
             eps = Eps[0]
@@ -168,8 +168,6 @@ class myWidget(QMainWindow):
         # rm_min = self.wnd.dblSpinBox_12.value()
         # rm_max = self.wnd.dblSpinBox_18.value()
         # print('piks_d: ' + str(piks_d))
-
-
 
         r2_min = self.wnd.dblSpinBox_13.value()
         r2_max = self.wnd.dblSpinBox_20.value()
@@ -211,20 +209,21 @@ class myWidget(QMainWindow):
                         pi0_str = round(pi0, 2)
                         if r_vnesh:
                             r_vnesh_str = round(r_vnesh, 3)
-                            s = 'результат при: r2 = {}; ~+π+~,,ks = {}; theta2 = {}; pi0 = {}; r_vnesh = {}'.format(r2_str,
+                            s = 'Результат при: \n r2   = {}; Пks = {}; theta2 = {}; Пo = {}; r(внешний вихрь) = {}'.format(r2_str,
                                                                                                                 piks_str,
                                                                                                                 theta2_str,
                                                                                                                 pi0_str,
                                                                                                                 r_vnesh_str)
                         else:
                             r_vnutr_str = round(r_vnutr, 3)
-                            s = 'результат при: r2 = {}; piks = {}; theta2 = {}; pi0 = {}; r_vnutr = {}'.format(r2_str,
+                            s = 'результат при: \n r2 = {}; Пks = {}; theta2 = {}; Пo = {}; r(внутренний вихрь) = {}'.format(r2_str,
                                                                                                                 piks_str,
                                                                                                                 theta2_str,
                                                                                                                 pi0_str,
                                                                                                                 r_vnutr_str) #πθr̄
                         textEdit.append(s)
                         textEdit.append(str(res))
+
                         pi0 += pi0_d
 
                     theta2 += theta2_d

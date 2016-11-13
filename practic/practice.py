@@ -47,8 +47,8 @@ def main_calc(piks, pi0, theta2, r_vnesh, r_vnutr, r2, eps):
         (2 * k2 * (1 + (1 / (eps ** 2))) * (r2 ** (2 * m)) * theta2 * Fi2 * z2 * R2)
 
     if r_vnesh is not None:
-        mf_vnesh = M1 / (
-        (1 + 1 / eps ** 2) ** 0.5 * (1 - A * (1 / (r_vnesh ** (2 * m)) - 1)) ** 0.5 * r_vnesh ** (2 * m))
+        mf_vnesh = M1 /\
+                   ((1 + 1 / eps ** 2) ** 0.5 * (1 - A * (1 / (r_vnesh ** (2 * m)) - 1)) ** 0.5 * r_vnesh ** (2 * m))
         return mf_vnesh
 
     if r_vnutr is not None:
