@@ -25,6 +25,8 @@ class myWidget(QMainWindow):
 
         self.wnd = uic.loadUi('test2.ui', self)
 
+        self.wnd.action.setEnabled(False)
+
         self.saveAction = self.wnd.action
 
         self.saveAction.setShortcut('Ctrl+S')
@@ -62,17 +64,10 @@ class myWidget(QMainWindow):
         f.close()
 
 
-    #
-    # with f:
-    #     data = f.save()
-    #     self.res_1()
+
 
 
     def run(self):
-
-        # fname = QFileDialog.getOpenFileName(self, 'Open file', '/home')[0]
-        # https: // pythonworld.ru / gui / pyqt5 - dialogs.html
-
         # self.wnd.dblSpinBox_16.value() = self.wnd.dblSpinBox_13.value() для r_vnutr
 
         # self.wnd.dblSpinBox_9.value() = self.wnd.dblSpinBox_13.value() для r_vnesh
@@ -85,7 +80,31 @@ class myWidget(QMainWindow):
         r_vnutr_d = self.wnd.dblSpinBox_17.value()
         r_vnesh_d = self.wnd.dblSpinBox_11.value()
 
-        # дисэйблить контролы
+        """ дисэйблить контролы"""
+        self.wnd.dblSpinBox.setEnabled(False)
+        self.wnd.dblSpinBox_2.setEnabled(False)
+        self.wnd.dblSpinBox_3.setEnabled(False)
+        self.wnd.dblSpinBox_4.setEnabled(False)
+        self.wnd.dblSpinBox_5.setEnabled(False)
+        self.wnd.dblSpinBox_6.setEnabled(False)
+        self.wnd.dblSpinBox_7.setEnabled(False)
+        self.wnd.dblSpinBox_9.setEnabled(False)
+        self.wnd.dblSpinBox_10.setEnabled(False)
+        self.wnd.dblSpinBox_11.setEnabled(False)
+        self.wnd.dblSpinBox_13.setEnabled(False)
+        self.wnd.dblSpinBox_15.setEnabled(False)
+        self.wnd.dblSpinBox_16.setEnabled(False)
+        self.wnd.dblSpinBox_17.setEnabled(False)
+        self.wnd.dblSpinBox_19.setEnabled(False)
+        self.wnd.dblSpinBox_20.setEnabled(False)
+        self.wnd.spinBox.setEnabled(False)
+        self.wnd.spinBox_2.setEnabled(False)
+        self.wnd.radioButton.setEnabled(False)
+        self.wnd.radioButton_2.setEnabled(False)
+        self.wnd.radioButton_3.setEnabled(False)
+        self.wnd.radioButton_4.setEnabled(False)
+        self.wnd.radioButton_5.setEnabled(False)
+
 
         r_vnesh = r_vnesh_min
         while r_vnesh <= r_vnesh_max:
@@ -97,15 +116,33 @@ class myWidget(QMainWindow):
             self.calc_part(self.wnd.textEdit_2, r_vnutr, None)
             r_vnutr += r_vnutr_d
 
-            # self.wnd.textEdit.setText(str(self.res_7[0] ) + ('  ') + str(self.res_7[1]))
-            # self.wnd.listWidget.text(str(self.res_7[0]))
-            # self.wnd.textEdit_2.setValue(self.res_7[1])
+            self.wnd.action.setEnabled(True)
+            self.wnd.dblSpinBox.setEnabled(True)
+            self.wnd.dblSpinBox_2.setEnabled(True)
+            self.wnd.dblSpinBox_3.setEnabled(True)
+            self.wnd.dblSpinBox_4.setEnabled(True)
+            self.wnd.dblSpinBox_5.setEnabled(True)
+            self.wnd.dblSpinBox_6.setEnabled(True)
+            self.wnd.dblSpinBox_7.setEnabled(True)
+            self.wnd.dblSpinBox_9.setEnabled(True)
+            self.wnd.dblSpinBox_10.setEnabled(True)
+            self.wnd.dblSpinBox_11.setEnabled(True)
+            self.wnd.dblSpinBox_13.setEnabled(True)
+            self.wnd.dblSpinBox_15.setEnabled(True)
+            self.wnd.dblSpinBox_16.setEnabled(True)
+            self.wnd.dblSpinBox_17.setEnabled(True)
+            self.wnd.dblSpinBox_19.setEnabled(True)
+            self.wnd.dblSpinBox_20.setEnabled(True)
+            self.wnd.spinBox.setEnabled(True)
+            self.wnd.spinBox_2.setEnabled(True)
+            self.wnd.radioButton.setEnabled(True)
+            self.wnd.radioButton_2.setEnabled(True)
+            self.wnd.radioButton_3.setEnabled(True)
+            self.wnd.radioButton_4.setEnabled(True)
+            self.wnd.radioButton_5.setEnabled(True)
+            """ энэйблить контрол"""
 
 
-            # энэйблить контролы
-
-    # def calc_delta(self):
-    # practic.de
 
     def calc_part(self, textEdit, r_vnutr, r_vnesh):
         if self.wnd.radioButton.isChecked():
@@ -174,7 +211,7 @@ class myWidget(QMainWindow):
                         pi0_str = round(pi0, 2)
                         if r_vnesh:
                             r_vnesh_str = round(r_vnesh, 3)
-                            s = 'результат при: r2 = {}; piks = {}; theta2 = {}; pi0 = {}; r_vnesh = {}'.format(r2_str,
+                            s = 'результат при: r2 = {}; ~+π+~,,ks = {}; theta2 = {}; pi0 = {}; r_vnesh = {}'.format(r2_str,
                                                                                                                 piks_str,
                                                                                                                 theta2_str,
                                                                                                                 pi0_str,
@@ -185,7 +222,7 @@ class myWidget(QMainWindow):
                                                                                                                 piks_str,
                                                                                                                 theta2_str,
                                                                                                                 pi0_str,
-                                                                                                                r_vnutr_str)
+                                                                                                                r_vnutr_str) #πθr̄
                         textEdit.append(s)
                         textEdit.append(str(res))
                         pi0 += pi0_d
